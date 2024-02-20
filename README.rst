@@ -1,3 +1,9 @@
+Disclaimer
+----------
+
+This is just a fork of the official, unmaintained, Dovecot Formula for Salt.
+Use it at your own risk, as it's been heavily and hastily customized for my specific use cases.  
+
 ===============
 dovecot-formula
 ===============
