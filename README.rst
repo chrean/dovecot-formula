@@ -1,9 +1,3 @@
-Disclaimer
-----------
-
-This is just a fork of the official, unmaintained, Dovecot Formula for Salt.
-Use it at your own risk, as it's been heavily and hastily customized for my specific use cases.  
-
 ===============
 dovecot-formula
 ===============
@@ -11,6 +5,11 @@ dovecot-formula
 A salt formula that installs and configures the dovecot IMAP server. It currently supports an Arch, Debian/Ubuntu, Gentoo or
 Red Hat styled layout of the dovecot configuration files in /etc. 
 Config file content (where needed) is stored in pillar (see pillar.example).
+
+Disclaimer
+==========
+
+This is just a fork of the official, unmaintained, Dovecot Formula for Salt. Use it at your own risk, as it's been heavily and hastily customized for my specific use cases.
 
 Config file to pillar mappings:
 ===============================
