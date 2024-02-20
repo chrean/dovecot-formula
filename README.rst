@@ -17,6 +17,7 @@ e.g.:
 
 .. code::
 
+  /etc/dovecot/dovecot-sql.conf.ext in dovecot:config:dovecotext:sql
   /etc/dovecot/dovecot-ldap.conf.ext in dovecot:config:dovecotext:ldap
   /etc/dovecot/conf.d/auth-ldap.conf.ext in dovecot:config:confext:ldap
   /etc/dovecot/conf.d/10-ldap.conf in dovecot:config:conf:10-ldap
@@ -55,3 +56,12 @@ postfix:
 
 The list of networks will then be expanded, joined, and injected into Dovecot's conf files appropriately.
 
+Also, there are other grains related to the DB if you decide to use it:
+
+. code::
+
+postfix:
+  dbhost: hostname.example.com
+  dbname: postfixadmin
+  dbuser: postfixadmin
+  dbpassword: verysecret
