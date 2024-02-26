@@ -62,7 +62,7 @@ The list of networks will then be expanded, joined, and injected into Dovecot's 
 Also, there are other grains related to the DB if you decide to use it::
 
 postfix:
-  database:
+  db:
     host: hostname.example.com
     name: postfixadmin
     user: postfixadmin

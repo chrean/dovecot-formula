@@ -74,7 +74,7 @@ dovecot:
       dovecotext:
         sql: |
           driver: mysql
-          connect = host={{grains['postfix']['dbhost']}} dbname={{grains['postfix']['dbname']}} user={{grains['postfix']['dbuser']}} password={{grains['postfix']['dbpassword']}}
+          connect = host={{grains['postfix']['db']['host']}} dbname={{grains['postfix']['db']['name']}} user={{grains['postfix']['db']['user]']}} password={{grains['postfix']['db']['password']}}
           default_pass_scheme = MD5_CRYPT
           password_query = SELECT username AS user,password FROM mailbox WHERE username = '%u' AND active='1'
           # UID and GID must be those of the postfix user
