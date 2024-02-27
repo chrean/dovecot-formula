@@ -52,18 +52,18 @@ or anyway not ideal in my opinion.
 E.g., the `login_trusted_networks` setting for Dovecot is difficult to safely fetch from the minion;
 therefore, the best solution I could think of for now is adding a section to the pillar, like this::
 
-postfix:
-  mynetworks:
-    - 172.16.1.0/24
-    - 192.168.0.0/24
+  postfix:
+    mynetworks:
+      - 172.16.1.0/24
+      - 192.168.0.0/24
 
 The list of networks will then be expanded, joined, and injected into Dovecot's conf files appropriately.
 
 Also, there are other grains related to the DB if you decide to use it::
 
-postfix:
-  db:
-    host: hostname.example.com
-    name: postfixadmin
-    user: postfixadmin
-    password: verysecret
+  postfix:
+    db:
+      host: hostname.example.com
+      name: postfixadmin
+      user: postfixadmin
+      password: verysecret
